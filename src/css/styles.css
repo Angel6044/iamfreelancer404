@@ -40,6 +40,10 @@ footer .text-white a:hover {
   transition: color 0.3s ease;
 }
 
+.text-muted {
+  color: var(--bs-secondary-bg);
+}
+
 footer .btn:hover {
   background-color: #0056b3;
 }
