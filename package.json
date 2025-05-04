@@ -1,0 +1,19 @@
+{
+  "name": "games-zone-js",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "minify": "node scripts/minify.js",
+    "webp": "node scripts/convert-webp.js",
+     "build": "node build.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "esbuild": "^0.25.3",
+    "sharp": "^0.34.1"
+  }
+}

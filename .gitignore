@@ -1,0 +1,16 @@
+# Node.js
+node_modules/
+.env
+*.log
+
+# Archivos de build / distribución
+/public/
+
+# Archivos temporales del sistema o del editor
+.DS_Store
+Thumbs.db
+.vscode/
+*.tmp
+
+# Paquetes bloqueados (opcional si no querés subirlos)
+package-lock.json
