@@ -1,0 +1,57 @@
+/* Estilos generales que complementan a Bootstrap */
+
+body {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  color: #fff;
+  margin-top: 65px; /* Espacio para la navbar fija */
+}
+
+/* Personalización de la navbar */
+.navbar {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand img {
+  max-height: 40px;
+  width: auto;
+}
+
+.nav-link {
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #ffcc00 !important;
+}
+
+/* Personalización de botones */
+.btn {
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+}
+
+/* Footer personalizado */
+footer .text-white a:hover {
+  color: #007bff !important;
+  transition: color 0.3s ease;
+}
+
+footer .btn:hover {
+  background-color: #0056b3;
+}
+
+footer .fab:hover {
+  color: #007bff !important;
+  transition: color 0.3s ease;
+}
+
+/* Responsividad adicional */
+@media (max-width: 768px) {
+  body {
+    margin-top: 56px; /* Ajuste para navbar más pequeña en móviles */
+  }
+}
