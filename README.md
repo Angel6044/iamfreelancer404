@@ -69,9 +69,9 @@ IAMFREELANCER404/
 
 	`npm run build`
 
-- **convert-images**: Convierte imágenes a formatos optimizados
+- **convert-img-to-picture**: Convierte imágenes a formatos optimizados
 
-	`npm run convert-images`
+	`node scripts/convert-img-to-picture.js`
 
 ## 📄 Licencia
 
