@@ -1,10 +1,10 @@
 // scripts/convert-webp.js
-const fs = require('fs');
-const path = require('path');
-const sharp = require('sharp');
+const fs = require("fs");
+const path = require("path");
+const sharp = require("sharp");
 
-const inputDir = path.join(__dirname, '../src/assets');
-const outputDir = path.join(__dirname, '../public/assets');
+const inputDir = path.join(__dirname, "../src/assets");
+const outputDir = path.join(__dirname, "../public/assets");
 
 // Crear directorio de salida si no existe
 if (!fs.existsSync(outputDir)) {
@@ -13,43 +13,58 @@ if (!fs.existsSync(outputDir)) {
 
 // Procesar todas las imágenes
 function processImages(directory) {
-  fs.readdirSync(directory, { withFileTypes: true }).forEach(entry => {
+  fs.readdirSync(directory, { withFileTypes: true }).forEach((entry) => {
     const inputPath = path.join(directory, entry.name);
-    
-    // Si es un directorio, procesarlo recursivamente
+
+    // Procesar recursivamente si es un subdirectorio
     if (entry.isDirectory()) {
-      const subOutputDir = path.join(outputDir, path.relative(inputDir, inputPath));
+      const subOutputDir = path.join(
+        outputDir,
+        path.relative(inputDir, inputPath)
+      );
       if (!fs.existsSync(subOutputDir)) {
         fs.mkdirSync(subOutputDir, { recursive: true });
       }
       processImages(inputPath);
       return;
     }
-    
-    // Si es una imagen, convertirla
+
     const ext = path.extname(entry.name).toLowerCase();
-    if (['.jpg', '.jpeg', '.png'].includes(ext)) {
-      const relativePath = path.relative(inputDir, directory);
-      const targetDir = path.join(outputDir, relativePath);
-      
-      if (!fs.existsSync(targetDir)) {
-        fs.mkdirSync(targetDir, { recursive: true });
-      }
-      
+    const relativePath = path.relative(inputDir, directory);
+    const targetDir = path.join(outputDir, relativePath);
+
+    if (!fs.existsSync(targetDir)) {
+      fs.mkdirSync(targetDir, { recursive: true });
+    }
+
+    // Copiar archivo original
+    const destOriginal = path.join(targetDir, entry.name);
+    fs.copyFileSync(inputPath, destOriginal);
+    console.log(
+      `📄 Copiado original: ${path.relative(outputDir, destOriginal)}`
+    );
+
+    // Si es imagen válida, convertir a .webp
+    if ([".jpg", ".jpeg", ".png"].includes(ext)) {
       const outputPath = path.join(
         targetDir,
-        path.basename(entry.name, ext) + '.webp'
+        path.basename(entry.name, ext) + ".webp"
       );
 
       sharp(inputPath)
         .webp({ quality: 80 })
         .toFile(outputPath)
-        .then(() => console.log(`✅ ${entry.name} → ${path.relative(outputDir, outputPath)}`))
-        .catch(err => console.error(`❌ Error: ${entry.name}`, err));
+        .then(() =>
+          console.log(
+            `✅ Convertido a WebP: ${path.relative(outputDir, outputPath)}`
+          )
+        )
+        .catch((err) =>
+          console.error(`❌ Error al convertir ${entry.name}`, err)
+        );
     }
   });
 }
 
-// Iniciar el procesamiento
+console.log("🖼️ Convirtiendo imágenes a WebP y copiando originales...");
 processImages(inputDir);
-console.log('Convirtiendo imágenes a WebP...');

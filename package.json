@@ -6,7 +6,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "minify": "node scripts/minify.js",
     "webp": "node scripts/convert-webp.js",
-     "build": "node build.js"
+    "build": "node build.js"
   },
   "keywords": [],
   "author": "",
@@ -15,5 +15,9 @@
   "devDependencies": {
     "esbuild": "^0.25.3",
     "sharp": "^0.34.1"
+  },
+  "dependencies": {
+    "cheerio": "^1.0.0",
+    "html-minifier-terser": "^7.2.0"
   }
 }
