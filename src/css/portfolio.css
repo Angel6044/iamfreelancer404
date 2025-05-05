@@ -1,0 +1,170 @@
+/* Estilos para la sección de portafolio */
+.portafolio {
+    background: #f4f4f4;
+    text-align: center;
+}
+
+.portafolio h1 {
+    font-size: 2.5rem;
+    color: #4a00e0;
+}
+
+/* Estilos para las tarjetas de proyecto */
+.proyecto {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+}
+
+.proyecto:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 35px 60px rgba(0, 0, 0, 0.2);
+}
+
+.proyecto img {
+    width: 80%;
+    border-radius: 10px;
+    margin-top: 15px;
+    transition: transform 0.3s ease;
+}
+
+.proyecto img:hover {
+    transform: scale(1.05);
+}
+
+.proyecto h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.proyecto p {
+    font-size: 1rem;
+    color: #555;
+}
+
+.links-proyecto {
+    display: flex;
+    justify-content: space-around;
+}
+
+/* Estilos para testimonios */
+.testimonios {
+    background: #fff;
+    text-align: center;
+}
+
+.testimonios h1 {
+    font-size: 2.5rem;
+    color: #4a00e0;
+}
+
+.testimonio {
+    background: #f4f4f4;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.testimonio:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.testimonio img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.testimonio h3 {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.testimonio p {
+    font-size: 1rem;
+    color: #555;
+}
+
+.estrellas i {
+    font-size: 1.2rem;
+    color: #ffcc00;
+}
+
+/* Responsividad */
+@media (max-width: 1024px) {
+
+    .portafolio h1,
+    .testimonios h1 {
+        font-size: 2rem;
+    }
+
+    .proyecto h2,
+    .testimonio h3 {
+        font-size: 1.3rem;
+    }
+
+    .proyecto p,
+    .testimonio p {
+        font-size: 0.9rem;
+    }
+
+    .testimonio img {
+        width: 120px;
+        height: 120px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .portafolio h1,
+    .testimonios h1 {
+        font-size: 1.8rem;
+    }
+
+    .proyecto h2,
+    .testimonio h3 {
+        font-size: 1.2rem;
+    }
+
+    .proyecto p,
+    .testimonio p {
+        font-size: 0.8rem;
+    }
+
+    .testimonio img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .links-proyecto {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .portafolio h1,
+    .testimonios h1 {
+        font-size: 1.5rem;
+    }
+
+    .proyecto h2,
+    .testimonio h3 {
+        font-size: 1rem;
+    }
+
+    .proyecto p,
+    .testimonio p {
+        font-size: 0.7rem;
+    }
+
+    .testimonio img {
+        width: 80px;
+        height: 80px;
+    }
+}
