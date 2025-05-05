@@ -1,17 +1,17 @@
 a {
     text-decoration: none;
-    color: #4a00e0;
+    color: var(--color-primario);
     transition: color 0.3s ease;
 }
 
 a:hover {
-    color: #ffcc00;
+    color: var(--color-acento);
 }
 
 /* Blog Header */
 .blog-header {
     text-align: center;
-    color: #fff;
+    color: var(--color-texto-claro);
     padding: 80px 20px 200px;
     margin-top: 0;
     /* Ajustado para Bootstrap, el margen lo maneja styles.css */
@@ -59,7 +59,7 @@ a:hover {
 /* Artículo del Blog */
 .blog-articulo {
     border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: var(--sombra-suave);
     overflow: hidden;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     height: 100%;
@@ -67,7 +67,7 @@ a:hover {
 
 .blog-articulo:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    box-shadow: var(--sombra-media);
 }
 
 .blog-articulo img {
@@ -88,13 +88,13 @@ a:hover {
 .blog-detalles h2 {
     font-size: 1.5rem;
     margin-bottom: 10px;
-    color: #333;
+    color: var(--color-texto-oscuro);
 }
 
 .blog-detalles p {
     font-size: 1rem;
     margin-bottom: 15px;
-    color: #555;
+    color: var(--color-texto-gris);
 }
 
 .blog-enlace {

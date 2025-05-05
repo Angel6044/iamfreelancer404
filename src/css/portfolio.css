@@ -1,19 +1,19 @@
 /* Estilos para la sección de portafolio */
 .portafolio {
-    background: #f4f4f4;
+    background: var(--color-fondo-claro);
     text-align: center;
 }
 
 .portafolio h1 {
     font-size: 2.5rem;
-    color: #4a00e0;
+    color: var(--color-primario);
 }
 
 /* Estilos para las tarjetas de proyecto */
 .proyecto {
-    background: #fff;
+    background: var(--color-fondo-blanco);
     border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: var(--sombra-suave);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     overflow: hidden;
 }
@@ -36,13 +36,13 @@
 
 .proyecto h2 {
     font-size: 1.5rem;
-    color: #333;
+    color: var(--color-texto-oscuro);
     margin-bottom: 15px;
 }
 
 .proyecto p {
     font-size: 1rem;
-    color: #555;
+    color: var(--color-texto-gris);
 }
 
 .links-proyecto {
@@ -52,25 +52,25 @@
 
 /* Estilos para testimonios */
 .testimonios {
-    background: #fff;
+    background: var(--color-fondo-blanco);
     text-align: center;
 }
 
 .testimonios h1 {
     font-size: 2.5rem;
-    color: #4a00e0;
+    color: var(--color-primario);
 }
 
 .testimonio {
-    background: #f4f4f4;
+    background: var(--color-fondo-claro);
     border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: var(--sombra-suave);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .testimonio:hover {
     transform: translateY(-10px);
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+    box-shadow: var(--sombra-fuerte);
 }
 
 .testimonio img {
@@ -81,17 +81,17 @@
 
 .testimonio h3 {
     font-size: 1.2rem;
-    color: #333;
+    color: var(--color-texto-oscuro);
 }
 
 .testimonio p {
     font-size: 1rem;
-    color: #555;
+    color: var(--color-texto-gris);
 }
 
 .estrellas i {
     font-size: 1.2rem;
-    color: #ffcc00;
+    color: var(--color-acento);
 }
 
 /* Responsividad */
