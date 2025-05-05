@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link rel="icon" href="../src/img/favicon/favicon4.png" type="image/x-icon">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/blog.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="../index.html">
+                    <img src="../assets/img/logo/blanco/Logos (Tamaño libre)/Transparente.png" alt="Logo del sitio">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="services.html">Servicios</a></li>
+                        <li class="nav-item"><a class="nav-link" href="portfolio.html">Portafolio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="blog-header">
+            <div class="container text-center">
+                <h1 class="display-4">Mi Blog</h1>
+                <p class="lead">Explora artículos y recursos sobre desarrollo web, tecnología y más.</p>
+            </div>
+        </section>
+
+        <section class="blog-contenido py-5">
+            <div class="container">
+                <div class="row g-4">
+                    <!-- Artículo 1 -->
+                    <div class="col-lg-4 col-md-6" data-aos="fade-up">
+                        <div class="card blog-articulo h-100">
+                            <img src="../src/img/images_illustrative/image_1.jpg" class="card-img-top"
+                                alt="Imagen artículo 1">
+                            <div class="card-body blog-detalles d-flex flex-column">
+                                <h2 class="card-title">Cómo crear aplicaciones web modernas</h2>
+                                <p class="card-text flex-grow-1">Descubre las mejores prácticas para desarrollar
+                                    aplicaciones web con React, Node.js y más.</p>
+                                <a href="#" class="blog-enlace mt-auto">Leer más <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Artículo 2 -->
+                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                        <div class="card blog-articulo h-100">
+                            <img src="../src/img/images_illustrative/image_2.jpg" class="card-img-top"
+                                alt="Imagen artículo 2">
+                            <div class="card-body blog-detalles d-flex flex-column">
+                                <h2 class="card-title">Optimización de rendimiento en sitios web</h2>
+                                <p class="card-text flex-grow-1">Conoce cómo mejorar la velocidad de tu sitio utilizando
+                                    herramientas como Lighthouse.</p>
+                                <a href="#" class="blog-enlace mt-auto">Leer más <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Artículo 3 -->
+                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+                        <div class="card blog-articulo h-100">
+                            <img src="../src/img/images_illustrative/image_3.jpg" class="card-img-top"
+                                alt="Imagen artículo 3">
+                            <div class="card-body blog-detalles d-flex flex-column">
+                                <h2 class="card-title">Introducción a APIs RESTful</h2>
+                                <p class="card-text flex-grow-1">Aprende los conceptos básicos para diseñar e
+                                    implementar APIs RESTful eficientes.</p>
+                                <a href="#" class="blog-enlace mt-auto">Leer más <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <!-- Logo, Botón de Contacto y Navegación -->
+            <div class="row mb-4">
+                <!-- Logo -->
+                <div class="col-lg-4 mb-4 mb-lg-0 text-center text-lg-start">
+                    <a href="../index.html">
+                        <img src="../assets/img/logo/blanco/Logos (Tamaño libre)/Transparente.png" alt="Logo del Sitio"
+                            class="img-fluid" style="max-width: 250px;">
+                    </a>
+                </div>
+                <!-- Botón de Contacto -->
+                <div class="col-lg-4 mb-4 mb-lg-0 text-center d-flex align-items-center justify-content-center">
+                    <a href="contact.html" class="btn btn-primary">Contáctame</a>
+                </div>
+                <!-- Navegación -->
+                <div class="col-lg-4 text-center text-lg-end">
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="../index.html" class="text-white text-decoration-none">Inicio</a></li>
+                        <li class="mb-2"><a href="services.html" class="text-white text-decoration-none">Servicios</a>
+                        </li>
+                        <li class="mb-2"><a href="portfolio.html" class="text-white text-decoration-none">Portafolio</a>
+                        </li>
+                        <li class="mb-2"><a href="blog.html" class="text-white text-decoration-none">Blog</a>
+                        </li>
+                        <li class="mb-2"><a href="contact.html" class="text-white text-decoration-none">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Redes Sociales -->
+            <div class="row">
+                <div class="col-12 text-center mb-4">
+                    <a href="https://www.facebook.com/people/IamFreelancer404/61574625526860/" target="_blank"
+                        class="text-white mx-2 fs-4">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://www.instagram.com/iamfreelancer404/" target="_blank" class="text-white mx-2 fs-4">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/%C3%A1ngel-benitez/" target="_blank"
+                        class="text-white mx-2 fs-4">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://github.com/Angel6044/" target="_blank" class="text-white mx-2 fs-4">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Copyright -->
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p class="small">&copy; 2025 IamFreelancer404. Todos los derechos reservados.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Inicializar AOS (Animate On Scroll)
+            AOS.init({
+                duration: 800,
+                easing: 'ease-in-out',
+                once: true
+            });
+        });
+    </script>
+</body>
+
+</html>
