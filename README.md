@@ -14,7 +14,7 @@ Sitio web desarrollado con HTML5, CSS3, bootstrap y JavaScript, con automatizaci
 ```
 IAMFREELANCER404/
 ├── scripts/                # Scripts de automatización
-│   ├── convert-img-to-picture.js  # Conversión de imágenes a formato <picture>
+│   ├── convert-img-to-picture.js  # Adaptar html para utilizar <picture>
 │   ├── convert-webp.js     # Conversión de imágenes a formato WebP
 │   └── minify.js           # Minificación de archivos
 ├── src/                    # Código fuente (desarrollo)
@@ -69,7 +69,7 @@ IAMFREELANCER404/
 
 	`npm run build`
 
-- **convert-img-to-picture**: Convierte imágenes a formatos optimizados
+- **convert-img-to-picture**: Adaptar html para utilizar <picture>
 
 	`node scripts/convert-img-to-picture.js`
 
