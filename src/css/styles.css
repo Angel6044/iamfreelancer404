@@ -53,6 +53,10 @@ footer .fab:hover {
   transition: color 0.3s ease;
 }
 
+footer .social-links a {
+  text-decoration: none;
+}
+
 /* Responsividad adicional */
 @media (max-width: 768px) {
   body {
