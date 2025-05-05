@@ -69,7 +69,7 @@ IAMFREELANCER404/
 
 	`npm run build`
 
-- **convert-img-to-picture**: Adaptar html para utilizar <picture>
+- **convert-img-to-picture**: Adaptar html para utilizar picture
 
 	`node scripts/convert-img-to-picture.js`
 
