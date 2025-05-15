@@ -1,11 +1,11 @@
 ## 📋 Descripción del Proyecto
 
-Sitio web desarrollado con HTML5, CSS3, bootstrap y JavaScript, con automatización de tareas utilizando Node.js. Incluye optimización de imágenes en formato `.webp`, generación de archivos minificados  para HTML, CSS y JS.
+Sitio web desarrollado con HTML5, CSS3, bootstrap y JavaScript, con automatización de tareas utilizando Node.js. Incluye optimización de imágenes en formato `.webp`, generación de archivos minificados  para HTML, CSS, SASS y JS.
 
 ## 🛠️ Tecnologías Utilizadas
 
 - **HTML5** - Estructura semántica de contenido
-- **CSS3** - Estilos modulares con variables personalizadas
+- **CSS3 y SASS** - Estilos modulares con variables personalizadas
 - **JavaScript** - Funcionalidades interactivas
 - **Node.js** - Entorno de desarrollo y scripts de automatización
 
@@ -14,7 +14,7 @@ Sitio web desarrollado con HTML5, CSS3, bootstrap y JavaScript, con automatizaci
 ```
 IAMFREELANCER404/
 ├── scripts/                # Scripts de automatización
-│   ├── convert-img-to-picture.js  # Conversión de imágenes a formato <picture>
+│   ├── convert-img-to-picture.js  # Adaptar html para utilizar <picture>
 │   ├── convert-webp.js     # Conversión de imágenes a formato WebP
 │   └── minify.js           # Minificación de archivos
 ├── src/                    # Código fuente (desarrollo)
@@ -28,11 +28,26 @@ IAMFREELANCER404/
 │   │   └── styles.css      # Estilos globales y variables
 │   ├── js/                 # Archivos JavaScript
 │   └── pages/              # Páginas HTML
-│       ├── blog.html       # Página de blog
-│       ├── contact.html    # Página de contacto
-│       ├── portfolio.html  # Página de portafolio
-│       ├── services.html   # Página de servicios
-│       └── index.html      # Página principal
+│   │   ├── blog.html       # Página de blog
+│   │   ├── contact.html    # Página de contacto
+│   │   ├── portfolio.html  # Página de portafolio
+│   │   ├── services.html   # Página de servicios
+│   │   └── index.html      # Página principal
+│   └── sass/               # Carpeta principal de archivos SCSS para estilos
+│       ├── base            # Estilos base y variables globales
+│		│   ├── _variables.scss   # Variables Sass (colores, fuentes, tamaños)
+│		│   ├── _global.scss      # Estilos globales generales, resets y básicos
+│       ├── components      	  # Estilos para componentes reutilizables de la UI
+│		│   ├── _animations.scss  # Animaciones CSS personalizadas
+│		│   ├── _navbar.scss      # Estilos del menú de navegación
+│		│   ├── _buttons.scss     # Estilos para botones
+│		│   ├── _footer.scss      # Estilos del pie de página
+│		│   ├── _modal.scss       # Estilos para ventanas modales
+│       ├── blog.scss       # Estilos específicos para la página blog
+│       ├── contact.scss    # Estilos específicos para la página contacto
+│       ├── portfolio.scss  # Estilos específicos para la página portfolio
+│       ├── services.scss   # Estilos específicos para la página servicios
+│       └── index.scss      # Estilos específicos para la página principal (home)
 ├── .gitignore              # Archivos ignorados por Git
 ├── build.js                # Script de construcción principal
 ├── LICENSE                 # Licencia del proyecto
@@ -45,7 +60,7 @@ IAMFREELANCER404/
 - **Diseño Responsivo**: Adaptable a diferentes dispositivos y tamaños de pantalla
 - **Estructura Modular**: Organización clara de archivos por funcionalidad
 - **Optimización de Recursos**: Scripts para convertir y optimizar imágenes
-- **Sistema de Estilos Modular**: CSS organizado por componentes y páginas
+- **Sistema de Estilos Modular**: CSS y SASS organizado por componentes y páginas
 - **Automatización de Procesos**: Scripts para minificación y construcción
 
 ## 🚀 Instalación
@@ -69,9 +84,13 @@ IAMFREELANCER404/
 
 	`npm run build`
 
-- **convert-images**: Convierte imágenes a formatos optimizados
+- **convert-img-to-picture**: Adaptar html para utilizar picture
 
-	`npm run convert-images`
+	`node scripts/convert-img-to-picture.js`
+
+- **Para compilar sass**:
+
+	`npm run sass`
 
 ## 📄 Licencia
 
@@ -96,6 +115,8 @@ Este proyecto está bajo la Licencia especificada en el archivo [LICENSE](https:
 **Angel6044**
 
 - GitHub: [Angel6044](https://github.com/Angel6044)
+
+- https://iamfreelancer404.netlify.app/
 
 ---
 
