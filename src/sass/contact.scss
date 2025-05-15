@@ -1,93 +1,101 @@
-/* Formulario de Contacto */
+@use "base/variables";
+@use "base/global";
+
+@use "components/navbar";
+@use "components/buttons";
+@use "components/footer";
+
+// Formulario de Contacto
 .contact-form {
-    padding: 40px 30px;
-    background-color: var(--color-fondo-blanco);
-    border-radius: 10px;
-    margin-top: 30px;
-}
+  padding: 40px 30px;
+  background-color: variables.$color-fondo-blanco;
+  border-radius: 10px;
+  margin-top: 30px;
 
-.contact-form h1 {
-    color: var(--color-texto-oscuro);
+  h1 {
+    color: variables.$color-texto-oscuro;
     font-weight: 600;
+  }
 }
 
-/* Personalización de los inputs de Bootstrap */
+// Inputs de Bootstrap
 .form-control {
-    padding: 12px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    font-size: 1rem;
-    transition: border-color 0.3s ease, box-shadow 0.3s ease;
-}
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
 
-.form-control:focus {
-    border-color: var(--color-primario);
+  &:focus {
+    border-color: variables.$color-primario;
     box-shadow: 0 0 0 0.25rem rgba(74, 0, 224, 0.25);
+  }
 }
 
-/* Personalización del botón */
+// Botón
 .btn-primary {
-    background-color: var(--color-primario);
-    border-color: var(--color-primario);
-    padding: 10px 20px;
-    font-weight: 500;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-}
+  background-color: variables.$color-primario;
+  border-color: variables.$color-primario;
+  padding: 10px 20px;
+  font-weight: 500;
+  transition: background-color 0.3s ease, transform 0.3s ease;
 
-.btn-primary:hover,
-.btn-primary:focus {
-    background-color: var(--color-acento);
-    border-color: var(--color-acento);
-    color: var(--color-texto-oscuro);
+  &:hover,
+  &:focus {
+    background-color: variables.$color-acento;
+    border-color: variables.$color-acento;
+    color: variables.$color-texto-oscuro;
     transform: translateY(-2px);
+  }
 }
 
-/* Contenedor de Mapa y Dirección */
+// Contenedor de mapa y dirección
 .contact-info {
-    background-color: var(--color-fondo-blanco);
-    border-radius: 10px;
-    overflow: hidden;
-    margin-top: 50px;
+  background-color: variables.$color-fondo-blanco;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-top: 50px;
 }
 
 .direccion {
-    background-color: var(--color-fondo-claro);
-}
+  background-color: variables.$color-fondo-claro;
+  padding: 30px;
 
-.direccion h2 {
-    color: var(--color-texto-oscuro);
+  h2 {
+    color: variables.$color-texto-oscuro;
     font-weight: 600;
     margin-bottom: 15px;
-}
+  }
 
-.direccion p {
+  p {
     font-size: 1.1rem;
-    color: var(--color-texto-gris);
+    color: variables.$color-texto-gris;
+  }
 }
 
-/* Añadimos sombras para elementos */
+// Sombras
 .shadow {
-    box-shadow: var(--sombra-suave) !important;
+  box-shadow: variables.$sombra-suave !important;
 }
 
-/* Responsividad */
+// Responsividad
 @media (max-width: 768px) {
-    .contact-form {
-        padding: 30px 20px;
-    }
+  .contact-form {
+    padding: 30px 20px;
+  }
 
-    .direccion {
-        padding: 30px 15px !important;
-        text-align: center;
-    }
+  .direccion {
+    padding: 30px 15px !important;
+    text-align: center;
+  }
 }
 
 @media (max-width: 576px) {
-    .contact-form h1 {
-        font-size: 1.8rem;
-    }
+  .contact-form h1 {
+    font-size: 1.8rem;
+  }
 
-    .direccion h2 {
-        font-size: 1.5rem;
-    }
+  .direccion h2 {
+    font-size: 1.5rem;
+  }
 }

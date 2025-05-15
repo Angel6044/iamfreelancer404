@@ -1,29 +1,75 @@
-@charset "UTF-8";
-a {
-  text-decoration: none;
-  color: var(--color-primario);
+body {
+  font-family: "Poppins", sans-serif;
+  line-height: 1.6;
+  color: #fff;
+  margin-top: 65px;
+}
+@media (max-width: 768px) {
+  body {
+    margin-top: 56px;
+  }
+}
+
+.navbar {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.navbar .navbar-brand img {
+  max-height: 40px;
+  width: auto;
+}
+.navbar .nav-link {
   transition: color 0.3s ease;
 }
-
-a:hover {
-  color: var(--color-acento);
+.navbar .nav-link:hover {
+  color: #ffcc00 !important;
 }
 
-/* Blog Header */
+.btn {
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+.btn:hover {
+  transform: scale(1.05);
+}
+
+footer .text-white a:hover {
+  color: #007bff !important;
+  transition: color 0.3s ease;
+}
+footer .btn:hover {
+  background-color: #0056b3;
+}
+footer .fab:hover {
+  color: #007bff !important;
+  transition: color 0.3s ease;
+}
+footer .social-links a {
+  text-decoration: none;
+}
+
+.text-muted {
+  color: var(--bs-secondary-bg);
+}
+
+a {
+  text-decoration: none;
+  color: #4a00e0;
+  transition: color 0.3s ease;
+}
+a:hover {
+  color: #ffcc00;
+}
+
 .blog-header {
   text-align: center;
-  color: var(--color-texto-claro);
+  color: #fff;
   padding: 80px 20px 200px;
   margin-top: 0;
-  /* Ajustado para Bootstrap, el margen lo maneja styles.css */
-  background-image: url("../assets/img/backgrounds/blog-header.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   position: relative;
 }
-
 .blog-header::before {
   content: "";
   position: absolute;
@@ -32,45 +78,39 @@ a:hover {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
-  /* Overlay oscuro para mejorar legibilidad */
   z-index: 0;
 }
-
 .blog-header .container {
   position: relative;
   z-index: 1;
 }
-
 .blog-header h1 {
   font-size: 2.5rem;
   margin-bottom: 10px;
   font-weight: 600;
 }
-
 .blog-header p {
   font-size: 1.2rem;
 }
 
-/* Contenido del Blog */
 .blog-contenido {
   margin-top: -100px;
-  /* Negativo para superponer con el header */
 }
 
-/* Artículo del Blog */
 .blog-articulo {
   border-radius: 10px;
-  box-shadow: var(--sombra-suave);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   height: 100%;
 }
-
 .blog-articulo:hover {
   transform: translateY(-5px);
-  box-shadow: var(--sombra-media);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
-
+.blog-articulo:hover img {
+  transform: scale(1.05);
+}
 .blog-articulo img {
   width: 100%;
   height: 200px;
@@ -78,24 +118,18 @@ a:hover {
   transition: transform 0.3s ease;
 }
 
-.blog-articulo:hover img {
-  transform: scale(1.05);
-}
-
 .blog-detalles {
   padding: 20px;
 }
-
 .blog-detalles h2 {
   font-size: 1.5rem;
   margin-bottom: 10px;
-  color: var(--color-texto-oscuro);
+  color: #333;
 }
-
 .blog-detalles p {
   font-size: 1rem;
   margin-bottom: 15px;
-  color: var(--color-texto-gris);
+  color: #555;
 }
 
 .blog-enlace {
@@ -106,7 +140,6 @@ a:hover {
   gap: 5px;
 }
 
-/* Responsividad adicional */
 @media (max-width: 768px) {
   .blog-header {
     padding: 60px 20px 150px;

@@ -1,0 +1,12 @@
+@use "variables";
+
+body {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  color: variables.$color-texto-claro;
+  margin-top: 65px;
+
+  @media (max-width: 768px) {
+    margin-top: 56px;
+  }
+}

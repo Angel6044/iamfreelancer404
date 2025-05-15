@@ -1,0 +1,18 @@
+@use "../base/variables";
+
+.navbar {
+  box-shadow: variables.$sombra-suave;
+
+  .navbar-brand img {
+    max-height: 40px;
+    width: auto;
+  }
+
+  .nav-link {
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: variables.$color-acento !important;
+    }
+  }
+}

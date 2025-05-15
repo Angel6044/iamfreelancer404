@@ -1,49 +1,92 @@
-@charset "UTF-8";
-/* Estilos para la sección de portafolio */
+body {
+  font-family: "Poppins", sans-serif;
+  line-height: 1.6;
+  color: #fff;
+  margin-top: 65px;
+}
+@media (max-width: 768px) {
+  body {
+    margin-top: 56px;
+  }
+}
+
+.navbar {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.navbar .navbar-brand img {
+  max-height: 40px;
+  width: auto;
+}
+.navbar .nav-link {
+  transition: color 0.3s ease;
+}
+.navbar .nav-link:hover {
+  color: #ffcc00 !important;
+}
+
+.btn {
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+.btn:hover {
+  transform: scale(1.05);
+}
+
+footer .text-white a:hover {
+  color: #007bff !important;
+  transition: color 0.3s ease;
+}
+footer .btn:hover {
+  background-color: #0056b3;
+}
+footer .fab:hover {
+  color: #007bff !important;
+  transition: color 0.3s ease;
+}
+footer .social-links a {
+  text-decoration: none;
+}
+
+.text-muted {
+  color: var(--bs-secondary-bg);
+}
+
 .portafolio {
-  background: var(--color-fondo-claro);
+  background: #f4f4f4;
   text-align: center;
 }
-
 .portafolio h1 {
   font-size: 2.5rem;
-  color: var(--color-primario);
+  color: #4a00e0;
 }
 
-/* Estilos para las tarjetas de proyecto */
 .proyecto {
-  background: var(--color-fondo-blanco);
+  background: #fff;
   border-radius: 10px;
-  box-shadow: var(--sombra-suave);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   overflow: hidden;
 }
-
 .proyecto:hover {
   transform: translateY(-10px);
   box-shadow: 0 35px 60px rgba(0, 0, 0, 0.2);
 }
-
 .proyecto img {
   width: 80%;
   border-radius: 10px;
   margin-top: 15px;
   transition: transform 0.3s ease;
 }
-
 .proyecto img:hover {
   transform: scale(1.05);
 }
-
 .proyecto h2 {
   font-size: 1.5rem;
-  color: var(--color-texto-oscuro);
+  color: #333;
   margin-bottom: 15px;
 }
-
 .proyecto p {
   font-size: 1rem;
-  color: var(--color-texto-gris);
+  color: #555;
 }
 
 .links-proyecto {
@@ -51,51 +94,44 @@
   justify-content: space-around;
 }
 
-/* Estilos para testimonios */
 .testimonios {
-  background: var(--color-fondo-blanco);
+  background: #fff;
   text-align: center;
 }
-
 .testimonios h1 {
   font-size: 2.5rem;
-  color: var(--color-primario);
+  color: #4a00e0;
 }
 
 .testimonio {
-  background: var(--color-fondo-claro);
+  background: #f4f4f4;
   border-radius: 10px;
-  box-shadow: var(--sombra-suave);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-
 .testimonio:hover {
   transform: translateY(-10px);
-  box-shadow: var(--sombra-fuerte);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
 }
-
 .testimonio img {
   width: 150px;
   height: 150px;
   object-fit: cover;
 }
-
 .testimonio h3 {
   font-size: 1.2rem;
-  color: var(--color-texto-oscuro);
+  color: #333;
 }
-
 .testimonio p {
   font-size: 1rem;
-  color: var(--color-texto-gris);
+  color: #555;
 }
 
 .estrellas i {
   font-size: 1.2rem;
-  color: var(--color-acento);
+  color: #ffcc00;
 }
 
-/* Responsividad */
 @media (max-width: 1024px) {
   .portafolio h1,
   .testimonios h1 {

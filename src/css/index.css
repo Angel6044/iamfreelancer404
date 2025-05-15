@@ -1,17 +1,64 @@
-@charset "UTF-8";
-/* Estilos específicos para la página de inicio */
-.inicio {
-  min-height: 100vh;
-  background: linear-gradient(135deg, var(--color-secundario), var(--color-primario));
+body {
+  font-family: "Poppins", sans-serif;
+  line-height: 1.6;
+  color: #fff;
+  margin-top: 65px;
+}
+@media (max-width: 768px) {
+  body {
+    margin-top: 56px;
+  }
+}
+
+.navbar {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.navbar .navbar-brand img {
+  max-height: 40px;
+  width: auto;
+}
+.navbar .nav-link {
+  transition: color 0.3s ease;
+}
+.navbar .nav-link:hover {
+  color: #ffcc00 !important;
+}
+
+.btn {
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+.btn:hover {
+  transform: scale(1.05);
+}
+
+footer .text-white a:hover {
+  color: #007bff !important;
+  transition: color 0.3s ease;
+}
+footer .btn:hover {
+  background-color: #0056b3;
+}
+footer .fab:hover {
+  color: #007bff !important;
+  transition: color 0.3s ease;
+}
+footer .social-links a {
+  text-decoration: none;
+}
+
+.text-muted {
+  color: var(--bs-secondary-bg);
+}
+
+.modal-content {
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.modal .modal-body {
   padding: 2rem;
 }
 
-#cambio-texto {
-  color: var(--color-acento);
-  transition: opacity 0.5s ease;
-}
-
-/* Animaciones */
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -24,17 +71,11 @@
   animation: fadeIn 1.5s ease-in-out;
 }
 
-/* Personalización del modal */
-.modal-content {
-  border-radius: 10px;
-  overflow: hidden;
-}
-
-.modal .modal-body {
+.inicio {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #8e2de2, #4a00e0);
   padding: 2rem;
 }
-
-/* Media queries adicionales */
 @media (max-width: 576px) {
   .inicio h1 {
     font-size: 2rem !important;
@@ -42,6 +83,14 @@
   .inicio p {
     font-size: 1rem !important;
   }
+}
+
+#cambio-texto {
+  color: #ffcc00;
+  transition: opacity 0.5s ease;
+}
+
+@media (max-width: 576px) {
   .btn-lg {
     padding: 0.5rem 1rem !important;
     font-size: 1rem !important;

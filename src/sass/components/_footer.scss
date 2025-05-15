@@ -1,0 +1,25 @@
+@use "../base/variables";
+
+footer {
+  .text-white a:hover {
+    color: variables.$color-enlace !important;
+    transition: color 0.3s ease;
+  }
+
+  .btn:hover {
+    background-color: variables.$color-enlace-hover;
+  }
+
+  .fab:hover {
+    color: variables.$color-enlace !important;
+    transition: color 0.3s ease;
+  }
+
+  .social-links a {
+    text-decoration: none;
+  }
+}
+
+.text-muted {
+  color: var(--bs-secondary-bg);
+}

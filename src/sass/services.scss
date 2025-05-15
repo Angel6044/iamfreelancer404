@@ -1,77 +1,74 @@
-/* Estilos para la sección de servicios */
+@use "base/variables";
+@use "base/global";
+
+@use "components/navbar";
+@use "components/buttons";
+@use "components/footer";
+
 .servicios {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-}
+  padding: 2rem 0;
 
-/* Tarjeta de servicio */
-.service-card {
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    margin-bottom: 2rem;
-    border: none;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: var(--sombra-suave);
-}
-
-.service-card:hover {
-    transform: translateY(-10px);
-    box-shadow: var(--sombra-media);
-}
-
-/* Contenido de la tarjeta */
-.card-body {
-    color: var(--color-texto-oscuro);
-}
-
-/* Icono principal del servicio */
-.service-icon i {
-    font-size: 3rem;
-    color: var(--color-primario);
-}
-
-/* Iconos de tecnologías */
-.service-icons i {
-    font-size: 1.5rem;
-    color: var(--color-primario);
-    margin-right: 10px;
-    transition: color 0.3s ease;
-}
-
-.service-icons i:hover {
-    color: var(--color-acento);
-}
-
-/* Títulos de las tarjetas */
-.card-title {
-    font-size: 1.5rem;
-    color: var(--color-texto-oscuro);
-    margin-bottom: 1rem;
-}
-
-/* Imágenes de las tarjetas */
-.card-body img {
-    transition: transform 0.3s ease;
-}
-
-.card-body img:hover {
-    transform: scale(1.05);
-}
-
-/* Ajustes para dispositivos móviles */
-@media (max-width: 767.98px) {
-    .service-card {
-        text-align: center;
-    }
-
-    .service-icons {
-        justify-content: center;
-        display: flex;
-    }
-}
-
-/* Ajustes para el título principal */
-.servicios h1 {
+  h1 {
     font-weight: 600;
     margin-bottom: 2rem;
+  }
+}
+
+.service-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 2rem;
+  border: none;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: variables.$sombra-suave;
+
+  &:hover {
+    transform: translateY(-10px);
+    box-shadow: variables.$sombra-media;
+  }
+
+  @media (max-width: 767.98px) {
+    text-align: center;
+  }
+}
+
+.card-body {
+  color: variables.$color-texto-oscuro;
+
+  img {
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+}
+
+.service-icon i {
+  font-size: 3rem;
+  color: variables.$color-primario;
+}
+
+.service-icons {
+  i {
+    font-size: 1.5rem;
+    color: variables.$color-primario;
+    margin-right: 10px;
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: variables.$color-acento;
+    }
+  }
+
+  @media (max-width: 767.98px) {
+    justify-content: center;
+    display: flex;
+  }
+}
+
+.card-title {
+  font-size: 1.5rem;
+  color: variables.$color-texto-oscuro;
+  margin-bottom: 1rem;
 }

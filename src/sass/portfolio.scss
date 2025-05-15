@@ -1,170 +1,171 @@
-/* Estilos para la sección de portafolio */
+@use "base/variables";
+@use "base/global";
+
+@use "components/navbar";
+@use "components/buttons";
+@use "components/footer";
+
 .portafolio {
-    background: var(--color-fondo-claro);
-    text-align: center;
-}
+  background: variables.$color-fondo-claro;
+  text-align: center;
 
-.portafolio h1 {
+  h1 {
     font-size: 2.5rem;
-    color: var(--color-primario);
+    color: variables.$color-primario;
+  }
 }
 
-/* Estilos para las tarjetas de proyecto */
 .proyecto {
-    background: var(--color-fondo-blanco);
-    border-radius: 10px;
-    box-shadow: var(--sombra-suave);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    overflow: hidden;
-}
+  background: variables.$color-fondo-blanco;
+  border-radius: 10px;
+  box-shadow: variables.$sombra-suave;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
 
-.proyecto:hover {
+  &:hover {
     transform: translateY(-10px);
     box-shadow: 0 35px 60px rgba(0, 0, 0, 0.2);
-}
+  }
 
-.proyecto img {
+  img {
     width: 80%;
     border-radius: 10px;
     margin-top: 15px;
     transition: transform 0.3s ease;
-}
 
-.proyecto img:hover {
-    transform: scale(1.05);
-}
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
 
-.proyecto h2 {
+  h2 {
     font-size: 1.5rem;
-    color: var(--color-texto-oscuro);
+    color: variables.$color-texto-oscuro;
     margin-bottom: 15px;
-}
+  }
 
-.proyecto p {
+  p {
     font-size: 1rem;
-    color: var(--color-texto-gris);
+    color: variables.$color-texto-gris;
+  }
 }
 
 .links-proyecto {
-    display: flex;
-    justify-content: space-around;
+  display: flex;
+  justify-content: space-around;
 }
 
-/* Estilos para testimonios */
 .testimonios {
-    background: var(--color-fondo-blanco);
-    text-align: center;
-}
+  background: variables.$color-fondo-blanco;
+  text-align: center;
 
-.testimonios h1 {
+  h1 {
     font-size: 2.5rem;
-    color: var(--color-primario);
+    color: variables.$color-primario;
+  }
 }
 
 .testimonio {
-    background: var(--color-fondo-claro);
-    border-radius: 10px;
-    box-shadow: var(--sombra-suave);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
+  background: variables.$color-fondo-claro;
+  border-radius: 10px;
+  box-shadow: variables.$sombra-suave;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 
-.testimonio:hover {
+  &:hover {
     transform: translateY(-10px);
-    box-shadow: var(--sombra-fuerte);
-}
+    box-shadow: variables.$sombra-fuerte;
+  }
 
-.testimonio img {
+  img {
     width: 150px;
     height: 150px;
     object-fit: cover;
-}
+  }
 
-.testimonio h3 {
+  h3 {
     font-size: 1.2rem;
-    color: var(--color-texto-oscuro);
-}
+    color: variables.$color-texto-oscuro;
+  }
 
-.testimonio p {
+  p {
     font-size: 1rem;
-    color: var(--color-texto-gris);
+    color: variables.$color-texto-gris;
+  }
 }
 
 .estrellas i {
-    font-size: 1.2rem;
-    color: var(--color-acento);
+  font-size: 1.2rem;
+  color: variables.$color-acento;
 }
 
-/* Responsividad */
+// Media Queries
 @media (max-width: 1024px) {
+  .portafolio h1,
+  .testimonios h1 {
+    font-size: 2rem;
+  }
 
-    .portafolio h1,
-    .testimonios h1 {
-        font-size: 2rem;
-    }
+  .proyecto h2,
+  .testimonio h3 {
+    font-size: 1.3rem;
+  }
 
-    .proyecto h2,
-    .testimonio h3 {
-        font-size: 1.3rem;
-    }
+  .proyecto p,
+  .testimonio p {
+    font-size: 0.9rem;
+  }
 
-    .proyecto p,
-    .testimonio p {
-        font-size: 0.9rem;
-    }
-
-    .testimonio img {
-        width: 120px;
-        height: 120px;
-    }
+  .testimonio img {
+    width: 120px;
+    height: 120px;
+  }
 }
 
 @media (max-width: 768px) {
+  .portafolio h1,
+  .testimonios h1 {
+    font-size: 1.8rem;
+  }
 
-    .portafolio h1,
-    .testimonios h1 {
-        font-size: 1.8rem;
-    }
+  .proyecto h2,
+  .testimonio h3 {
+    font-size: 1.2rem;
+  }
 
-    .proyecto h2,
-    .testimonio h3 {
-        font-size: 1.2rem;
-    }
+  .proyecto p,
+  .testimonio p {
+    font-size: 0.8rem;
+  }
 
-    .proyecto p,
-    .testimonio p {
-        font-size: 0.8rem;
-    }
+  .testimonio img {
+    width: 100px;
+    height: 100px;
+  }
 
-    .testimonio img {
-        width: 100px;
-        height: 100px;
-    }
-
-    .links-proyecto {
-        flex-direction: column;
-        gap: 10px;
-    }
+  .links-proyecto {
+    flex-direction: column;
+    gap: 10px;
+  }
 }
 
 @media (max-width: 480px) {
+  .portafolio h1,
+  .testimonios h1 {
+    font-size: 1.5rem;
+  }
 
-    .portafolio h1,
-    .testimonios h1 {
-        font-size: 1.5rem;
-    }
+  .proyecto h2,
+  .testimonio h3 {
+    font-size: 1rem;
+  }
 
-    .proyecto h2,
-    .testimonio h3 {
-        font-size: 1rem;
-    }
+  .proyecto p,
+  .testimonio p {
+    font-size: 0.7rem;
+  }
 
-    .proyecto p,
-    .testimonio p {
-        font-size: 0.7rem;
-    }
-
-    .testimonio img {
-        width: 80px;
-        height: 80px;
-    }
+  .testimonio img {
+    width: 80px;
+    height: 80px;
+  }
 }
