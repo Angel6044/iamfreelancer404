@@ -3,10 +3,11 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "minify": "node scripts/minify.js",
     "webp": "node scripts/convert-webp.js",
-    "build": "node build.js"
+    "build": "node build.js",
+    "sass": "sass src/sass:src/css --no-source-map",
+    "watch": "sass --watch src/sass:src/css --no-source-map"
   },
   "keywords": [],
   "author": "",
@@ -14,6 +15,7 @@
   "description": "",
   "devDependencies": {
     "esbuild": "^0.25.3",
+    "sass": "^1.88.0",
     "sharp": "^0.34.1"
   },
   "dependencies": {

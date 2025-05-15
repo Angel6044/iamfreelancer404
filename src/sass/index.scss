@@ -1,0 +1,52 @@
+/* Estilos específicos para la página de inicio */
+.inicio {
+    min-height: 100vh;
+    background: linear-gradient(135deg, var(--color-secundario), var(--color-primario));
+    padding: 2rem;
+}
+
+#cambio-texto {
+    color: var(--color-acento);
+    transition: opacity 0.5s ease;
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.animate__fadeIn {
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Personalización del modal */
+.modal-content {
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.modal .modal-body {
+    padding: 2rem;
+}
+
+/* Media queries adicionales */
+@media (max-width: 576px) {
+    .inicio h1 {
+        font-size: 2rem !important;
+    }
+
+    .inicio p {
+        font-size: 1rem !important;
+    }
+
+    .btn-lg {
+        padding: 0.5rem 1rem !important;
+        font-size: 1rem !important;
+    }
+}

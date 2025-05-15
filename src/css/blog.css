@@ -1,139 +1,134 @@
+@charset "UTF-8";
 a {
-    text-decoration: none;
-    color: var(--color-primario);
-    transition: color 0.3s ease;
+  text-decoration: none;
+  color: var(--color-primario);
+  transition: color 0.3s ease;
 }
 
 a:hover {
-    color: var(--color-acento);
+  color: var(--color-acento);
 }
 
 /* Blog Header */
 .blog-header {
-    text-align: center;
-    color: var(--color-texto-claro);
-    padding: 80px 20px 200px;
-    margin-top: 0;
-    /* Ajustado para Bootstrap, el margen lo maneja styles.css */
-    background-image: url('../assets/img/backgrounds/blog-header.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    position: relative;
+  text-align: center;
+  color: var(--color-texto-claro);
+  padding: 80px 20px 200px;
+  margin-top: 0;
+  /* Ajustado para Bootstrap, el margen lo maneja styles.css */
+  background-image: url("../assets/img/backgrounds/blog-header.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: relative;
 }
 
 .blog-header::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    /* Overlay oscuro para mejorar legibilidad */
-    z-index: 0;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  /* Overlay oscuro para mejorar legibilidad */
+  z-index: 0;
 }
 
 .blog-header .container {
-    position: relative;
-    z-index: 1;
+  position: relative;
+  z-index: 1;
 }
 
 .blog-header h1 {
-    font-size: 2.5rem;
-    margin-bottom: 10px;
-    font-weight: 600;
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  font-weight: 600;
 }
 
 .blog-header p {
-    font-size: 1.2rem;
+  font-size: 1.2rem;
 }
 
 /* Contenido del Blog */
 .blog-contenido {
-    margin-top: -100px;
-    /* Negativo para superponer con el header */
+  margin-top: -100px;
+  /* Negativo para superponer con el header */
 }
 
 /* Artículo del Blog */
 .blog-articulo {
-    border-radius: 10px;
-    box-shadow: var(--sombra-suave);
-    overflow: hidden;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    height: 100%;
+  border-radius: 10px;
+  box-shadow: var(--sombra-suave);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
 }
 
 .blog-articulo:hover {
-    transform: translateY(-5px);
-    box-shadow: var(--sombra-media);
+  transform: translateY(-5px);
+  box-shadow: var(--sombra-media);
 }
 
 .blog-articulo img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    transition: transform 0.3s ease;
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
 }
 
 .blog-articulo:hover img {
-    transform: scale(1.05);
+  transform: scale(1.05);
 }
 
 .blog-detalles {
-    padding: 20px;
+  padding: 20px;
 }
 
 .blog-detalles h2 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-    color: var(--color-texto-oscuro);
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: var(--color-texto-oscuro);
 }
 
 .blog-detalles p {
-    font-size: 1rem;
-    margin-bottom: 15px;
-    color: var(--color-texto-gris);
+  font-size: 1rem;
+  margin-bottom: 15px;
+  color: var(--color-texto-gris);
 }
 
 .blog-enlace {
-    font-size: 1rem;
-    font-weight: bold;
-    display: inline-flex;
-    align-items: center;
-    gap: 5px;
+  font-size: 1rem;
+  font-weight: bold;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
 }
 
 /* Responsividad adicional */
 @media (max-width: 768px) {
-    .blog-header {
-        padding: 60px 20px 150px;
-    }
-
-    .blog-header h1 {
-        font-size: 2rem;
-    }
-
-    .blog-header p {
-        font-size: 1rem;
-    }
-
-    .blog-contenido {
-        margin-top: -80px;
-    }
+  .blog-header {
+    padding: 60px 20px 150px;
+  }
+  .blog-header h1 {
+    font-size: 2rem;
+  }
+  .blog-header p {
+    font-size: 1rem;
+  }
+  .blog-contenido {
+    margin-top: -80px;
+  }
 }
-
 @media (max-width: 480px) {
-    .blog-header {
-        padding: 40px 20px 120px;
-    }
-
-    .blog-header h1 {
-        font-size: 1.8rem;
-    }
-
-    .blog-detalles h2 {
-        font-size: 1.3rem;
-    }
+  .blog-header {
+    padding: 40px 20px 120px;
+  }
+  .blog-header h1 {
+    font-size: 1.8rem;
+  }
+  .blog-detalles h2 {
+    font-size: 1.3rem;
+  }
 }

@@ -1,77 +1,76 @@
+@charset "UTF-8";
 /* Estilos para la sección de servicios */
 .servicios {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 /* Tarjeta de servicio */
 .service-card {
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    margin-bottom: 2rem;
-    border: none;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: var(--sombra-suave);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 2rem;
+  border: none;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: var(--sombra-suave);
 }
 
 .service-card:hover {
-    transform: translateY(-10px);
-    box-shadow: var(--sombra-media);
+  transform: translateY(-10px);
+  box-shadow: var(--sombra-media);
 }
 
 /* Contenido de la tarjeta */
 .card-body {
-    color: var(--color-texto-oscuro);
+  color: var(--color-texto-oscuro);
 }
 
 /* Icono principal del servicio */
 .service-icon i {
-    font-size: 3rem;
-    color: var(--color-primario);
+  font-size: 3rem;
+  color: var(--color-primario);
 }
 
 /* Iconos de tecnologías */
 .service-icons i {
-    font-size: 1.5rem;
-    color: var(--color-primario);
-    margin-right: 10px;
-    transition: color 0.3s ease;
+  font-size: 1.5rem;
+  color: var(--color-primario);
+  margin-right: 10px;
+  transition: color 0.3s ease;
 }
 
 .service-icons i:hover {
-    color: var(--color-acento);
+  color: var(--color-acento);
 }
 
 /* Títulos de las tarjetas */
 .card-title {
-    font-size: 1.5rem;
-    color: var(--color-texto-oscuro);
-    margin-bottom: 1rem;
+  font-size: 1.5rem;
+  color: var(--color-texto-oscuro);
+  margin-bottom: 1rem;
 }
 
 /* Imágenes de las tarjetas */
 .card-body img {
-    transition: transform 0.3s ease;
+  transition: transform 0.3s ease;
 }
 
 .card-body img:hover {
-    transform: scale(1.05);
+  transform: scale(1.05);
 }
 
 /* Ajustes para dispositivos móviles */
 @media (max-width: 767.98px) {
-    .service-card {
-        text-align: center;
-    }
-
-    .service-icons {
-        justify-content: center;
-        display: flex;
-    }
+  .service-card {
+    text-align: center;
+  }
+  .service-icons {
+    justify-content: center;
+    display: flex;
+  }
 }
-
 /* Ajustes para el título principal */
 .servicios h1 {
-    font-weight: 600;
-    margin-bottom: 2rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
 }
