@@ -35,14 +35,14 @@ IAMFREELANCER404/
 │   │   └── index.html      # Página principal
 │   └── sass/               # Carpeta principal de archivos SCSS para estilos
 │       ├── base            # Estilos base y variables globales
-│		│   ├── _variables.scss   # Variables Sass (colores, fuentes, tamaños)
-│		│   ├── _global.scss      # Estilos globales generales, resets y básicos
+│	│   ├── _variables.scss   # Variables Sass (colores, fuentes, tamaños)
+│	│   ├── _global.scss      # Estilos globales generales, resets y básicos
 │       ├── components      	  # Estilos para componentes reutilizables de la UI
-│		│   ├── _animations.scss  # Animaciones CSS personalizadas
-│		│   ├── _navbar.scss      # Estilos del menú de navegación
-│		│   ├── _buttons.scss     # Estilos para botones
-│		│   ├── _footer.scss      # Estilos del pie de página
-│		│   ├── _modal.scss       # Estilos para ventanas modales
+│	│   ├── _animations.scss  # Animaciones CSS personalizadas
+│	│   ├── _navbar.scss      # Estilos del menú de navegación
+│	│   ├── _buttons.scss     # Estilos para botones
+│	│   ├── _footer.scss      # Estilos del pie de página
+│	│   ├── _modal.scss       # Estilos para ventanas modales
 │       ├── blog.scss       # Estilos específicos para la página blog
 │       ├── contact.scss    # Estilos específicos para la página contacto
 │       ├── portfolio.scss  # Estilos específicos para la página portfolio
