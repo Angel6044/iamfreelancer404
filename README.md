@@ -35,8 +35,8 @@ IAMFREELANCER404/
 │   │   └── index.html      # Página principal
 │   └── sass/               # Carpeta principal de archivos SCSS para estilos
 │       ├── base            # Estilos base y variables globales
-│	│   ├── _variables.scss   # Variables Sass (colores, fuentes, tamaños)
-│	│   ├── _global.scss      # Estilos globales generales, resets y básicos
+│	│   ├── _variables.scss   # Variables Sass (colores)
+│	│   ├── _global.scss      # Estilos globales generales y fuentes.
 │       ├── components      	  # Estilos para componentes reutilizables de la UI
 │	│   ├── _animations.scss  # Animaciones CSS personalizadas
 │	│   ├── _navbar.scss      # Estilos del menú de navegación
