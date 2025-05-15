@@ -60,15 +60,25 @@ a:hover {
 }
 
 .blog-header {
+  position: relative;
   text-align: center;
   color: #fff;
   padding: 80px 20px 200px;
   margin-top: 0;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  position: relative;
+  overflow: hidden;
+}
+.blog-header picture {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+}
+.blog-header picture img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 .blog-header::before {
   content: "";
@@ -78,7 +88,7 @@ a:hover {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
-  z-index: 0;
+  z-index: -1;
 }
 .blog-header .container {
   position: relative;

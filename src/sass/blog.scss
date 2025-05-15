@@ -17,15 +17,27 @@ a {
 
 // Blog Header
 .blog-header {
+  position: relative;
   text-align: center;
   color: variables.$color-texto-claro;
   padding: 80px 20px 200px;
   margin-top: 0;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  position: relative;
+  overflow: hidden;
+
+  picture {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
 
   &::before {
     content: "";
@@ -34,8 +46,8 @@ a {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    z-index: 0;
+    background-color: rgba(0, 0, 0, 0.5); // oscurece la imagen
+    z-index: -1;
   }
 
   .container {
@@ -53,6 +65,7 @@ a {
     font-size: 1.2rem;
   }
 }
+
 
 // Contenido del Blog
 .blog-contenido {
