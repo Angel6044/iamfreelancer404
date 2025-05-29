@@ -53,6 +53,8 @@ IAMFREELANCER404/
 ├── LICENSE                 # Licencia del proyecto
 ├── package.json            # Configuración del proyecto y dependencias
 └── README.md               # Documentación del proyecto
+└── robots.txt              # Guiar a los rastreadores y controlar el acceso
+└── sitemap.xml             # Mejorar indexación por los motores de búsqueda
 ```
 
 ## ✨ Características
@@ -109,6 +111,18 @@ Este proyecto está bajo la Licencia especificada en el archivo [LICENSE](https:
 - Conversión automática de imágenes a formato WebP
 - Implementación del elemento `<picture>` para imágenes responsivas
 - Minificación de archivos CSS, JS y HTML para producción
+
+### Optimización SEO
+
+Este proyecto ha sido optimizado para mejorar su visibilidad y rendimiento en los motores de búsqueda mediante:
+
+* **Meta Etiquetas:** Títulos, descripciones y palabras clave únicas y relevantes en cada página HTML.
+* **Sitemap XML:** Archivo `sitemap.xml` generado para una mejor indexación por los motores de búsqueda.
+* **Robots.txt:** Archivo `robots.txt` para guiar a los rastreadores y controlar el acceso al sitio.
+* **Optimización de Imágenes:** Uso de formatos `webp` y atributos `alt` para mejorar la carga y accesibilidad.
+* **URLs Amigables:** Estructura de URLs clara y descriptiva para facilitar la navegación y el rastreo.
+
+Estas implementaciones buscan una mayor visibilidad y una mejor experiencia de usuario.
 
 ## 👤 Autor
 
